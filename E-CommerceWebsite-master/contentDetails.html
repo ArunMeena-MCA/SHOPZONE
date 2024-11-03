@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTENT DETAILS | SHOPZONE</title>
+    <link rel="icon" href="https://yt3.ggpht.com/a/AGF-l78km1YyNXmF0r3-0CycCA0HLA_i6zYn_8NZEg=s900-c-k-c0xffffffff-no-rj-mo" type="image/gif" sizes="16x16">
+    <link rel="stylesheet" href="css/contetDetails.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4a3b1f73a2.js"></script>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <div id="header"></div>
+    <script>
+        function loadHeaderFooter(id, url) {
+            const req = new XMLHttpRequest();
+            req.open("GET", url, false);
+            req.send(null);
+            document.getElementById(id).innerHTML = req.responseText;
+        }
+        loadHeaderFooter("header", "header.html");
+    </script>
+    
+    <!-- Main Product Details Container -->
+    <div id="containerProduct">
+        <!-- Content will be dynamically injected here by contentDetails.js -->
+    </div>
+
+    <!-- JavaScript for dynamically loading product details -->
+    <script src="js/contentDetails.js"></script>
+
+    <!-- FOOTER -->
+    <div id="footer"></div>
+    <script>
+        loadHeaderFooter("footer", "footer.html");
+    </script>
+</body>
+</html>

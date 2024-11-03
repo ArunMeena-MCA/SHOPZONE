@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> CONTENT | SHOPZONE </title>
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <!-- favicon -->
+    <link rel="icon"
+        href="https://yt3.ggpht.com/a/AGF-l78km1YyNXmF0r3-0CycCA0HLA_i6zYn_8NZEg=s900-c-k-c0xffffffff-no-rj-mo"
+        type="image/gif" sizes="16x16">
+
+    <link rel="stylesheet" href="css/content.css">
+
+</head>
+
+<body>
+    <div id="mainContainer">
+
+        <h1> clothing for men and women </h1>
+        <div id="containerClothing">
+            <!-- JS rendered code -->
+        </div>
+
+        <h1> accessories for men and women </h1>
+        <div id="containerAccessories">
+            <!-- JS rendered code -->
+        </div>
+    </div>
+</body>
+<script src="js/content.js"></script>
+<script>
+    // In contentDetails.html
+    function getQueryParameter(name) {
+        const urlParams = new URLSearchParams(window.location.search);
+        return urlParams.get(name);
+    }
+
+    const productId = getQueryParameter('box');
+
+    // Use productId to fetch the specific product details
+    let httpRequest = new XMLHttpRequest();
+
+    httpRequest.onreadystatechange = function () {
+        if (this.readyState === 4 && this.status === 200) {
+            const productDetails = JSON.parse(this.responseText);
+            // Find the product with the matching ID and display its details
+            const product = productDetails.find(item => item.id === productId);
+            // Render product details on the page
+        }
+    };
+
+    httpRequest.open(
+        "GET",
+        "https://5d76bf96515d1a0014085cf9.mockapi.io/product",
+        true
+    );
+    httpRequest.send();
+
+</script>
+
+</html>

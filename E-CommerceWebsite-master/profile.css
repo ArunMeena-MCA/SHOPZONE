@@ -1,0 +1,122 @@
+  .profile-container {
+    width: 100%;
+    max-width: 1000px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    height: 700px;
+    margin-left: 10%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  
+  .profile-header p {
+    font-size: 0.9em;
+    color: #888;
+    margin-bottom: 20px;
+  }
+  
+  .profile-header a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .profile-content {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .profile-left {
+    width: 35%;
+    text-align: center;
+    border-right: 5px solid #ddd;
+    padding-right: 20px;
+  }
+  
+  .profile-pic img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+  }
+  
+  .user-name {
+    font-size: 1.5em;
+    margin: 10px 0;
+  }
+  
+  .user-role, .user-location {
+    color: #555;
+    margin-bottom: 15px;
+  }
+  
+  .action-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .action-buttons button {
+    padding: 10px 15px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+  }
+  
+  #Logout{
+    padding: 10px 15px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+    text-decoration: none;
+    background-color: red;
+  }
+
+  .btn-follow {
+    background-color: #007bff;
+  }
+  
+  .btn-message {
+    background-color: #28a745;
+  }
+  
+  .social-links p {
+    font-size: 0.9em;
+    margin: 10px 0;
+    color: #333;
+  }
+  
+  .profile-right {
+    width: 65%;
+    padding-left: 20px;
+  }
+  
+  .user-details p {
+    font-size: 1em;
+    margin: 8px 0;
+    color: #333;
+  }
+  
+  .user-details .btn-edit {
+    margin-top: 15px;
+    padding: 8px 12px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #17a2b8;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .project-status{
+     margin-top: 100px;
+     text-align: center;
+  }
+  
